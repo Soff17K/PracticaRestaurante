@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace PracticaRestaurante.Interfaces
 {
-    internal interface IRestaurante
+    public interface IRestaurante
     {
+        // List<menu> menús = new List<menu>;
+        /*public Menu CrearMenu()
+        {
+
+        }
+        */
+
+
+
     }
 }
