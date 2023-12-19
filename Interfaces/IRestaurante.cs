@@ -8,10 +8,10 @@ namespace PracticaRestaurante.Interfaces
 {
     public interface IRestaurante
     {
-        List<IMenu> CrearMenu();
+        IMenu CrearMenu(string nombreMenu);
         void AgregarElementosAMenu(List<IMenu> menuList);
         void VerMenu();
-        List<IMenu> ObtenerMenu(int indiceMenu);
+        IMenu ObtenerMenu(int indiceMenu);
 
 
     }
