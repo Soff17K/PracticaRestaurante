@@ -10,7 +10,7 @@ namespace PracticaRestaurante.Interfaces
     {
         int TotalPlatillos { get; }
 
-        void AgregarPlatillo(IPlatillo platillo);
+        void AgregarPlatillo(string nombre, int precio);
 
         void MostrarMenu();
     }
