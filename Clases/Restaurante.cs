@@ -59,6 +59,9 @@ namespace PracticaRestaurante.Clases
                 Console.WriteLine("El restaurante no posee ningún menú");
             }
         }
-        List<IMenu> ObtenerMenu(int indiceMenu);
+        IMenu ObtenerMenu(int indiceMenu)
+        {
+            return _menus[indiceMenu - 1];
+        }
     }
 }
