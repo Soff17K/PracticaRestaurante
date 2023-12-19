@@ -9,7 +9,7 @@ namespace PracticaRestaurante.Interfaces
 {
     public interface IElementoCuenta
     {
-        public Platillo platillo { get; set; }
+        public IPlatillo platillo { get; set; }
         public int Cantidad { get; set; }
 
         public int CostoTotal { get; }
