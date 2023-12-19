@@ -11,7 +11,7 @@ namespace PracticaRestaurante.Interfaces
         public int Total { get; }
 
         public void AgregarElemento(IPlatillo platillo, int Cantidad){
-
+            
         }
 
         public void MostrarCuenta(){
