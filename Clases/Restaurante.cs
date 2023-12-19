@@ -17,12 +17,33 @@ namespace PracticaRestaurante.Clases
         }
         public IMenu CrearMenu(string nombreMenu)
         {
-            
+            //IMenu nuevoMenu = new IMenu(nombreMenu);
+            //return nuevoMenu;
         }
 
-        public void AgregarElementosAMenu(List<IMenu> menuList)
+        public void AgregarElementosAMenu(IMenu menu)
         {
+            while(true)
+            {
+                Console.WriteLine("¿Deseas agregar un nuevo platillo?");
+                Console.WriteLine("1) Si    2)No");
+                string seleccion = Console.ReadLine();
+                if (seleccion == "1")
+                {
+                    Console.WriteLine("¿Cómo se llama el platillo?");
+                    string nombrePlatillo = Console.ReadLine();
+                    Console.WriteLine("¿Cuál es el precio del platillo?");
+                    int precioPlatillo = int.Parse(Console.ReadLine());
+                    menu.AgregarPlatillo(nombrePlatillo, precioPlatillo);
+                }
+                else
+                {
+                    break;
+                }
 
+            }
+            
+            
         }
         void VerMenu();
         List<IMenu> ObtenerMenu(int indiceMenu);
