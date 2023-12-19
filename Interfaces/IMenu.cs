@@ -8,5 +8,10 @@ namespace PracticaRestaurante.Interfaces
 {
     public internal interface IMenu
     {
+        int TotalPlatillos { get; }
+
+        void AgregarPlatillo(Platillo platillo);
+
+        void MostrarMenu();
     }
 }
