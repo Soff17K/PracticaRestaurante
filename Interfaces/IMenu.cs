@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticaRestaurante.Interfaces
 {
-    internal interface IMenu
+    public internal interface IMenu
     {
     }
 }
