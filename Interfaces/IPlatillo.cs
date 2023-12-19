@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace PracticaRestaurante.Interfaces
 {
-    public interface IMenu
+    public interface IPlatillo
     {
-        int TotalPlatillos { get; }
-
-        void AgregarPlatillo(IPlatillo platillo);
-
-        void MostrarMenu();
+        string Nombre { get; set; }
+        int Precio { get; set; }
+        int Id { get; }
     }
 }
