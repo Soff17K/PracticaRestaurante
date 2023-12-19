@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace PracticaRestaurante.Interfaces
 {
-    public interface IMenu
+    public internal interface IMenu
     {
         int TotalPlatillos { get; }
 
-        void AgregarPlatillo(IPlatillo platillo);
+        void AgregarPlatillo(Platillo platillo);
 
         void MostrarMenu();
     }
