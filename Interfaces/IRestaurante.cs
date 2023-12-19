@@ -10,7 +10,7 @@ namespace PracticaRestaurante.Interfaces
     {
         IMenu CrearMenu(string nombreMenu);
         void AgregarElementosAMenu(IMenu menu);
-        void VerMenu();
+        void VerMenus();
         IMenu ObtenerMenu(int indiceMenu);
 
 

@@ -45,7 +45,20 @@ namespace PracticaRestaurante.Clases
             
             
         }
-        void VerMenu();
+        void VerMenus()
+        {
+            var contador = 1;
+            Console.WriteLine("Los menús del restaurante son los siguientes:");
+            foreach (var menu in _menus)
+            {
+                Console.WriteLine($"{contador} - {menu.Titulo}");
+                contador++;
+            }
+            if(_menus.Count == null)
+            {
+                Console.WriteLine("El restaurante no posee ningún menú");
+            }
+        }
         List<IMenu> ObtenerMenu(int indiceMenu);
     }
 }
